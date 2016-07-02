@@ -1,0 +1,13 @@
+<table>
+ <tr>
+  <th>username</th>
+  <th>password</th>
+  <th>confirm_password</th>
+  </tr>
+  <%= @course.each do |course| %>
+  <tr>
+    <td><%= @course.username %></td>
+    <td><%= @course.password %></td>
+    <td><%= @course.confirm_password %></td> 
+ <%= link_to "Back", course_path(course) %>  
+</table>

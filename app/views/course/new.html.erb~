@@ -1,0 +1,16 @@
+<h1 align="center">Login</h1>
+<%= form_for @course, {:method => :post } do |f| %>
+<p>
+<%= f.label :username %>
+<%= f.text_field :username %>
+</p>
+<p>
+<%= f.label :password %>
+<%= f.text_field :password, :type => "password" %>
+</p>
+<p>
+<%= f.label :confirm_password %>
+<%= f.text_field :password, :type => "password" %>
+</p>
+<%= f.submit %>
+<% end %>
